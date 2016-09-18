@@ -1,15 +1,15 @@
 require 'sinatra'
 
-# get '/' do
-# 	p 'Hello world'
-# 	people = {
-# 	}
-#
-# 	name = people[params[:From]] || 'Default'
-# 	Twilio::TwiML::Response.new do |r|
-# 		r.Say "Hello #{name}"
-# 	end
-# end
+get '/' do
+	'Hello world'
+	# people = {
+	# }
+
+	# name = people[params[:From]] || 'Default'
+	# Twilio::TwiML::Response.new do |r|
+	# 	r.Say "Hello #{name}"
+	# end
+end
 
 post '/message' do
 	message = "I have a friend on the phone who's thinking of killing themselves. Please call me at #{params[:From]} and I'll merge the call."
