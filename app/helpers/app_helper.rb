@@ -9,11 +9,11 @@ helpers do
 
     @client.account.messages.create(
       {
-        :from => ENV['FROM'],
+        :from => ENV['TWILIO_PHONE_NUMBER'],
         :to => phone_number,
         :body => message,
       }
     )
-    0
+    200
   end
 end
