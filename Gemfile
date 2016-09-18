@@ -16,8 +16,8 @@ gem 'bcrypt'
 gem 'shotgun'
 gem 'pry'
 
-gem 'dotenv'
 gem 'twilio-ruby'
+gem 'dotenv'
 
 group :test do
   gem 'shoulda-matchers'
