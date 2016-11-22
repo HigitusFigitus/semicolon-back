@@ -1,14 +1,7 @@
 require 'sinatra'
 
 get '/' do
-	'Hello world'
-	# people = {
-	# }
-
-	# name = people[params[:From]] || 'Default'
-	# Twilio::TwiML::Response.new do |r|
-	# 	r.Say "Hello #{name}"
-	# end
+	'Root'
 end
 
 post '/message' do
